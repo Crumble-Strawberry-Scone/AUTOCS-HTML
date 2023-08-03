@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인증번호 입력 페이지</title>
+    <link rel="stylesheet" href="../CSS/헤더통일.css">
+    <style>
+        label {
+            font-weight: bold;
+        }
+
+        input {
+            width: 350px;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            outline: none;
+        }
+
+        input[type="submit"] {
+            background-color: #26361B;
+            color: #FFF;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+            width: 100px;
+            text-align: center;
+            margin-left: 5px;
+            margin-top: -15px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1C2716;
+        }
+
+        .separator {
+            border-bottom: 1px solid #1C2C10;
+            width: 30%;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="../img/로고 하양.png">
+        </div>
+    </header>
+
+    <main>
+        <h1 style="color: #1C2C10;">인증번호를 입력해주세요</h1>
+        <div class="separator"></div>
+
+            <label for="number" style="margin-top: 20px;">인증번호</label>
+            <input type="text" id="number" name="number" required><br><br>
+
+            <!-- 나중에 인증 기능 넣어서 맞을시 맞다고-->
+            <h5>인증번호가 맞습니다!</h5>
+            <h5>인증번호가 틀립니다!</h5>
+
+            <input type="submit" value="확인">
+    </main>
+</body>
+</html>
