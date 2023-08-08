@@ -1,0 +1,179 @@
+.container {
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    border: 1px solid rgb(199, 199, 199);
+    min-width: 1500px;
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    text-align: center;
+}
+
+.hor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.nav {
+    background: #2A3C1E;
+    width: 100%;
+    /* padding: 20px 30px; */
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: space-between;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 30px 20px 30px;
+}
+
+.menu {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+#logout {
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.logout {
+    text-align: right;
+    padding: 20px 30px 0 0;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftContainer {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: first baseline;
+    align-content: center;
+}
+
+.rightContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    height: 860px;
+    background-color: #ecead8;
+}
+
+.horizon {
+    border: 1.5px solid #2A3C1E;
+    width: 80%;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #2A3C1E;
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    margin-bottom: 30px;
+}
+
+.leftContainer div {
+    text-align: center;
+}
+
+.paddingContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: first baseline;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dept {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.workHours {
+    width: 100%;
+    background-color: #2A3C1E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.work, .date, .hour {
+    color: white;
+}
+
+.work {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.hour {
+    font-size: 3em;
+}
+
+.workBtn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.workBtn div {
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0px rgb(187, 187, 187);
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.attendence, .leaveWork {
+    font-size: 1.2em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.memo {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(204, 204, 204);
+}
