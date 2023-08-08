@@ -42,7 +42,7 @@
 .menubar {
     display: flex;
     justify-content: space-between;
-    padding: 0 30px 20px 30px;
+    padding: 0 60px 20px 60px;
 }
 
 .menu {
