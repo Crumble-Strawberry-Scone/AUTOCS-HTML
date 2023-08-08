@@ -1,14 +1,20 @@
 /* 기본 스타일 */
 body {
-    margin: 0;
-    padding: 0;
+    margin: auto;
+    padding: auto;
     font-family: Arial, sans-serif;
+}
+
+html {
+    max-width: 1080px;
+    margin: auto;
+    padding: auto;
 }
 
 .container {
     display: flex;
     height: 100vh;
-    justify-content: right;
+    justify-content: center;
 }
 
 .white-section {
@@ -25,7 +31,8 @@ body {
 
 .header2-section {
     background-color: #192C0B;
-    flex: 1; /* 20% */
+    flex: 1;
+    /* 20% */
     color: #FFF;
     padding: 20px;
     display: flex;
@@ -37,21 +44,21 @@ body {
 .logo {
     display: flex;
     justify-content: right;
-    
+
 }
 
 .logo img {
-    width: 250px; 
-    height: 270px; 
+    width: 250px;
+    height: 270px;
     margin-top: 5px;
     margin-right: 100px;
 }
 
 .category {
     display: flex;
-    flex-direction: row; 
-    justify-content: space-around;
-    margin-right: 300px;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: auto;
 }
 
 .category a {
@@ -66,7 +73,8 @@ body {
 
 .main-section {
     background-color: #ECEAD8;
-    flex: 4; /* 80% */
+    flex: 4;
+    /* 80% */
     padding: 20px;
 }
 
@@ -75,4 +83,9 @@ body {
     width: 500%;
     margin-top: 2px;
     margin-left: -290px;
+}
+
+.circle {
+    display: flex;
+    justify-content: center;
 }
