@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/stock.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="../resource/logo-black.png" alt="">
+                <div class="hor">
+                    <div class="horizon"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logout">
+                    <div id="logout" onclick="location.href='#'">
+                        로그아웃
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menu" onclick="location.href='#'">마이페이지</div>
+                    <div class="menu" onclick="location.href='#'">근태관리</div>
+                    <div class="menu" onclick="location.href='#'">전자결재</div>
+                    <div class="menu" onclick="location.href='#'">일정</div>
+                    <div class="menu" onclick="location.href='#'">게시판</div>
+                    <div class="menu" onclick="location.href='#'">재고관리</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <div class="paddingContainer">
+                    <ul class="menu-list">
+                        <div class="menu-visible ">
+                            <li id="cusAllMenu" onclick="location.href=''" >재고조회</li>
+                            <li id="cusScreenMenu" onclick="location.href=''">등록</li>
+                            <li id="cusProcessMenu" onclick="location.href=''">입고/폐기</li>
+                            <li id="cusRefuseMenu" onclick="location.href=''">영업점신청내역관리</li>
+                            <li id="cusCancelMenu" onclick="location.href=''">세금계산서</li>
+                            <li id="cusCancelMenu" onclick="location.href=''">통계</li>
+                        </div>
+                    </ul>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="content"></div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
