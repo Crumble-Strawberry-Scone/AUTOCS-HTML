@@ -82,11 +82,6 @@
     height: 100%;
 }
 
-.content {
-    height: 860px;
-    background-color: #ecead8;
-}
-
 .horizon {
     border: 1.5px solid #2A3C1E;
     width: 80%;
@@ -177,3 +172,96 @@
     height: 200px;
     background-color: rgb(204, 204, 204);
 }
+
+/*게시판 내용*/
+.borad {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 20px;
+    margin-left: 50px;
+    color: #192C0B;
+}
+
+.borad a {
+    margin: 20px 0;
+    text-align: left;
+    text-decoration: none;
+    color: #192C0B;
+    font-size: 18px;
+}
+
+.content {
+    height: 860px;
+    background-color: #ecead8;
+}
+
+.separator2 {
+    border-bottom: 3px solid #1C2C10;
+    width: 170px;
+    margin-top: -17px;
+    margin-left: -20px;
+    }
+
+.boardText {
+    width: 950px;
+    height: 800px;
+    background-color: white;
+    margin-left: 190px;
+    margin-top: -805px;
+    text-align: center;
+}
+
+.context {
+    padding-top: -20px;
+    font-size: 45px;
+}
+
+
+/* 게시판 글 작성, 수정 */
+.boardForm form {
+    width: 950px;
+    height: 800px;
+    background-color: white;
+    margin-left: 190px;
+    margin-top: -830px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select,
+input[type="text"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #2A3C1E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
