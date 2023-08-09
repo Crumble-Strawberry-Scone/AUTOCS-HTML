@@ -204,7 +204,7 @@
     }
 
 .boardText {
-    width: 950px;
+    width: 85%;
     height: 800px;
     background-color: white;
     margin-left: 190px;
@@ -220,37 +220,46 @@
 
 /* 게시판 글 작성, 수정 */
 .boardForm form {
-    width: 950px;
-    height: 800px;
+    width: 83%;
+    height: 770px;
     background-color: white;
     margin-left: 190px;
-    margin-top: -830px;
-    text-align: center;
+    margin-top: -810px;
+    text-align: left;
+    padding: 20px;
 }
 
-.form-group {
+.form-row {
+    display: flex;
+    justify-content: space-between;
     margin-bottom: 20px;
 }
 
+.form-group {
+    flex: 1;
+    margin: 0 5px;
+    display: flex;
+    align-items: center;
+}
+
 label {
-    display: block;
     font-weight: bold;
-    margin-bottom: 5px;
+    margin-right: 5px;
 }
 
 select,
 input[type="text"],
 textarea {
-    width: 80%;
+    width: 70%;
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 5px;
     font-size: 16px;
 }
 
-select,
-input[type="text"] {
-    margin-right: 10px;
+.text-center {
+    text-align: center;
+    margin-top: 20px;
 }
 
 button[type="submit"] {
