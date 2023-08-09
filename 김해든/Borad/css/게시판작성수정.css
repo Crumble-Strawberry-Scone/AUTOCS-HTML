@@ -218,3 +218,50 @@
 }
 
 
+/* 게시판 글 작성, 수정 */
+.boardForm form {
+    width: 950px;
+    height: 800px;
+    background-color: white;
+    margin-left: 190px;
+    margin-top: -830px;
+    text-align: center;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+select,
+input[type="text"],
+textarea {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+select,
+input[type="text"] {
+    margin-right: 10px;
+}
+
+button[type="submit"] {
+    background-color: #2A3C1E;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+
