@@ -64,27 +64,28 @@
                             <a href="../html/06_product-statistics.html">통계</a>
                         </div>
                         <div class="contentsbox">
-                            <h1 class="context">물품 신규등록</h1>
+                            <h1 class="context">등록</h1>
                             <table>
                                 <tr>
                                     <td>
                                         카테고리
                                     </td>
                                     <td>
-                                        <input type="text" placeholder="카테고리를 조회하세요" readonly style="background-color: lightgray;"/>
+                                        <button><a href="../html/01_regist-category.html">신규</a></button>
                                     </td>
                                     <td>
-                                        <button onclick="showPopup();">조회</button>
+                                        <button><a href="../html/01_delete-category.html">불용</a></button>
                                     </td>
                                 </tr>
                                 <tr>
                                     <td>
-                                        품목명
+                                        물품
                                     </td>
                                     <td>
-                                        <input type="text"/>
+                                        <button><a href="../html/01_regist-product.html">신규</a></button>
                                     </td>
                                     <td>
+                                        <button><a href="../html/01_delete-product.html">불용</a></button>
                                     </td>
                                 </tr>
                                 <tr>
@@ -92,55 +93,24 @@
                                         규격
                                     </td>
                                     <td>
-                                        <input type="selectbox" placeholder="규격을 조회하세요" readonly style="background-color: lightgray;"/>
+                                        <button><a href="../html/01_regist-standard.html">사용/미사용</a></button>
                                     </td>
                                     <td>
-                                        <button onclick="showPopup();">조회</button>
                                     </td>
+
                                 </tr>
                                 <tr>
                                     <td>
                                         단위
                                     </td>
                                     <td>
-                                        <input type="text" placeholder="단위를 조회하세요" readonly style="background-color: lightgray;"/>
-                                    </td>
-                                    <td>
-                                        <button onclick="showPopup();">조회</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        적정재고
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        단가
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        비고
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
+                                        <button><a href="../html/01_regist-unit.html">사용/미사용</a></button>
                                     </td>
                                     <td>
                                     </td>
                                 </tr>
                             </table>
-                            <button style="margin-top: 5%;" onclick="alert('등록하시겠습니까?')">등록</button>
+
                         </div>
                     </div>
                 </div>
@@ -148,7 +118,4 @@
         </div>
     </body>
 
-    <script language="javascript">
-        function showPopup() { window.open("../html/01_ListPopup.html", "a", "width=400, height=300, left=100, top=50"); }
-        </script>
 </html>

@@ -64,83 +64,52 @@
                             <a href="../html/06_product-statistics.html">통계</a>
                         </div>
                         <div class="contentsbox">
-                            <h1 class="context">물품 신규등록</h1>
+                            <h1 class="context">단위 신규등록</h1>
                             <table>
                                 <tr>
                                     <td>
-                                        카테고리
+                                        단위명
                                     </td>
                                     <td>
-                                        <input type="text" placeholder="카테고리를 조회하세요" readonly style="background-color: lightgray;"/>
+                                        <input type="text" placeholder="단위명을 입력하세요"/>
                                     </td>
                                     <td>
-                                        <button onclick="showPopup();">조회</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        품목명
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        규격
-                                    </td>
-                                    <td>
-                                        <input type="selectbox" placeholder="규격을 조회하세요" readonly style="background-color: lightgray;"/>
-                                    </td>
-                                    <td>
-                                        <button onclick="showPopup();">조회</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        단위
-                                    </td>
-                                    <td>
-                                        <input type="text" placeholder="단위를 조회하세요" readonly style="background-color: lightgray;"/>
-                                    </td>
-                                    <td>
-                                        <button onclick="showPopup();">조회</button>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        적정재고
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        단가
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <td>
-                                        비고
-                                    </td>
-                                    <td>
-                                        <input type="text"/>
-                                    </td>
-                                    <td>
+                                        <button onclick="alert('등록하시겠습니까?')">등록</button>
                                     </td>
                                 </tr>
                             </table>
-                            <button style="margin-top: 5%;" onclick="alert('등록하시겠습니까?')">등록</button>
+                            <div style="margin-top: 10%;">
+                                <div style="display: flex;  align-items: center; justify-content: space-between; ">
+                                    <h2>단위 목록</h2>
+                                    <div>
+                                        <button onclick="alert('사용 등록하시겠습니까?')">사용</button>
+                                        <button onclick="alert('미사용 등록하시겠습니까?')">미사용</button>
+                                    </div>
+
+                                </div>
+                                
+                                <table style="border: solid 1px;">
+                                    <tr>
+                                        <th>NO</th>
+                                        <th>단위명</th>
+                                        <th>사용여부</th>
+                                        <th>상태변경</th>
+                                        
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>EA</td>
+                                        <td>사용</td>
+                                        <td><input type="checkbox"></td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>박스</td>
+                                        <td>미사용</td>
+                                        <td><input type="checkbox"></td
+                                    </tr>
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -148,7 +117,4 @@
         </div>
     </body>
 
-    <script language="javascript">
-        function showPopup() { window.open("../html/01_ListPopup.html", "a", "width=400, height=300, left=100, top=50"); }
-        </script>
 </html>
