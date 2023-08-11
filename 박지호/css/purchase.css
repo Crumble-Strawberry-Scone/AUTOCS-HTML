@@ -1,5 +1,5 @@
 .content {
-    padding: 15px;
+    padding-left: 15px;
     display: flex;
 }
 
@@ -45,4 +45,8 @@
 .personInfo {
     display: flex;
     justify-content: space-between;
+} 
+
+.info1, .info2, .infoe3, .info4 {
+    display: flex;
 }

@@ -1,0 +1,159 @@
+/* @media screen and (min-width : 1825px) { */
+    
+
+
+.approval {
+    padding: 10px 20px;
+    margin: 20px 20px 20px 0px;
+}
+
+.area1 {
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 600;
+}
+
+.area2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.area3 {
+    display: grid;
+    grid-template-columns: 100px 200px;
+    grid-template-rows: 30px 30px 30px 30px;
+}
+
+.area5, .area6 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.area7, .area8 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.area9, .area10 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+}
+
+.area11, .area12 {
+    border-left: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.area6, .area8, .area10, .area12 {
+    border-right: 1px solid black;
+    text-align: center;
+    line-height: 30px;
+}
+
+.area5, .area7, .area9, .area11 {
+    background-color: #ecead8;
+    text-align: center;
+    line-height: 30px;
+}
+
+.area4 {
+    display: grid;
+    grid-template-columns: 20px 90px;
+    grid-template-rows: 25px 70px 25px;
+}
+
+.area13 {
+    grid-row-start: 1;
+    grid-row-end: 4;
+    border: 1px solid black;
+    line-height: 60px;
+}
+
+.area14, .area15, .area16 {
+    border-bottom: 1px solid black;
+    border-right: 1px solid black;
+    text-align: center;
+}
+
+.area14 {
+    border-top: 1px solid black;
+}
+
+.area15 {
+    line-height:70px;
+}
+
+.area17 {
+    display: grid;
+    grid-template-columns: 100px 94%;
+    grid-template-rows: 35px;
+    border: 1px solid black;
+}
+
+.area18 {
+    border-right: 1px solid black;
+    text-align: center;
+    line-height: 35px;
+    background-color: #ecead8;
+}
+
+.area19 {
+    line-height: 30.5px;
+    padding-left: 0.5%;
+}
+
+#documentTitle {
+    width: 96%;
+    height: 80%;
+    outline: none;
+    border: none;
+    background-color: #e2e2e2;
+    border-radius: 3px;
+}
+
+.area20 {
+    display: flex;
+    justify-content: right;
+}
+
+.btn1, .btn2 {
+    background-color: #2a3c1e;
+    color: white;
+    width: 50px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    border-radius: 5px;
+    box-shadow: 0px 2px 4px 0px rgb(121, 121, 121);
+    cursor: pointer;
+}
+
+.area21, .area28 {
+    display: grid;
+    grid-template-columns: 200px 120px 120px 150px 150px 400px;
+    grid-template-rows: 33px;
+}
+
+.area21 div {
+    background-color: #ecead8;
+    border-right: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 32px;
+}
+
+.area22, .area29 {
+    border-left: 1px solid black;
+}
+
+.area28 div {
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    line-height: 32px;
+}
+
+
+/* } */
