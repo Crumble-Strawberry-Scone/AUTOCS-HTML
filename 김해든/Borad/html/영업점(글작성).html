@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판-공지사항(영업점)</title>
+    <link rel="stylesheet" href="../css/영업점작성수정.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="../img/검정로고.png" alt="">
+                <div class="hor">
+                    <div class="horizon"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logout">
+                    <div id="logout" onclick="location.href='#'">
+                        로그아웃
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menu" onclick="location.href='#'">마이페이지</div>
+                    <div class="menu" onclick="location.href='#'">전자결재</div>
+                    <div class="menu" onclick="location.href='#'">일정</div>
+                    <div class="menu" onclick="location.href='#'">게시판</div>
+                    <div class="menu" onclick="location.href='#'">재고관리</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <div class="paddingContainer">
+                    <div class="profile"></div>
+                    <div class="name">XXX 점주님</div>
+                    
+                    <div class="workHours">
+                        <div class="work">오늘 날짜</div>
+                        <div class="date">2023-08-08</div>
+                        <div class="hour">8H 17M</div>
+                    </div>
+                    <div class="workBtn">
+                        <div class="attendence">오픈하기</div>
+                        <div class="leaveWork">마감하기</div>
+                    </div>
+                    <div class="memo"></div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="content">
+                    <div class="borad">
+                        <h1>게시판</h1>
+                        <div class="separator2"></div>
+                        <a href="#" style="margin-top: 60px;">공지사항</a>
+                        <a href="#">건의 및 의견</a>
+                        <a href="#">자유게시판</a>
+                        <a href="#" style="padding-top: 440px;">글 작성하기</a>
+                    </div>
+                    <div class="boardForm">
+                        <form id="postForm" action="#" method="post">
+                            <h2 style="padding-bottom: 30px; text-align: center;">글 작성</h2>
+                            <div class="form-row" style="margin-bottom: 3px;">
+                            <div class="form-group">
+                                <label for="author" style="margin-top: 15px;">작성자:</label>
+                                <input type="text" id="author" name="author" style="width: 200px;">
+                            </div>
+                            <div class="form-group" style="margin-left: -680px; margin-top: 12px;">
+                                <label for="anonymous">익명:</label>
+                                <input type="checkbox" id="anonymous" name="anonymous">
+                            </div>
+                        </div>
+                            <div class="form-group">
+                                <select id="category" name="category" style="width: 230px;">
+                                    <option value="default" selected>카테고리를 선택하세요</option>
+                                    <option value="notice">공지사항</option>
+                                    <option value="rule">건의 및 의견</option>
+                                    <option value="free">자유게시판</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="title" name="title" placeholder="제목을 입력하세요">
+                            </div>
+                            <div class="form-group">
+                                <textarea id="content" name="content" rows="6" placeholder="내용을 입력하세요"
+                                    style="width: 100%; height: 410px;"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit">작성하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    
+</html>
