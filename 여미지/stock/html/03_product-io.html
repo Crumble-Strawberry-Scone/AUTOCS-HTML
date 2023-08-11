@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stock.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="headerContainer">
+                <div class="logo">
+                    <img src="../img/logo-black.png" alt="">
+                    <div class="hor">
+                        <div class="horizon"></div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="logout">
+                        <div id="logout" onclick="location.href='#'">
+                            로그아웃
+                        </div>
+                    </div>
+                    <div class="menubar">
+                        <div class="menu" onclick="location.href='#'">마이페이지</div>
+                        <div class="menu" onclick="location.href='#'">근태관리</div>
+                        <div class="menu" onclick="location.href='#'">전자결재</div>
+                        <div class="menu" onclick="location.href='#'">일정</div>
+                        <div class="menu" onclick="location.href='#'">게시판</div>
+                        <div class="menu" onclick="location.href='#'">재고관리</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer">
+                <div class="leftContainer">
+                    <div class="paddingContainer">
+                        <div class="profile"></div>
+                        <div class="name">홍길동 사원님</div>
+                        <div class="dept">영업 1부</div>
+                        <div class="workHours">
+                            <div class="work">근태관리</div>
+                            <div class="date">2023-08-08</div>
+                            <div class="hour">8H 17M</div>
+                        </div>
+                        <div class="workBtn">
+                            <div class="attendence">출근하기</div>
+                            <div class="leaveWork">퇴근하기</div>
+                        </div>
+                        <div class="memo"></div>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <div class="content">
+                        <div class="nav-bar">
+                            <h1 class="title">재고관리</h1>
+                            <div class="separator2"></div>
+                            <a href="../html/02_check-product.html" style="margin-top: 60px;">재고조회</a>
+                            <a href="../html/01_product-regist.html">등록</a>
+                            <a class="selected" href="../html/03_product-io.html">입고/폐기</a>
+                            <a href="../html/04_product-orderList.html">신청내역관리</a>
+                            <a href="../html/05_product-bill.html">세금계산서</a>
+                            <a href="../html/06_product-statistics.html">통계</a>
+                        </div>
+                        <div class="contentsbox">
+                            <h1 class="context">입고/폐기</h1>
+                            <table>
+                                <tr>
+                                    <td>
+                                        CODE
+                                    </td>
+                                    <td>
+                                        <input type="text" placeholder="품목명을 조회하세요" readonly style="background-color: lightgray;"/>
+                                    </td>
+                                    <td>
+                                        <button onclick="showPopup();">조회</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        품목명
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly style="background-color: lightgray;"/>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        규격
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly style="background-color: lightgray;" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        단위
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly style="background-color: lightgray;"/>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        적정재고
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly style="background-color: lightgray;"/>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        단가
+                                    </td>
+                                    <td>
+                                        <input type="text" readonly style="background-color: lightgray;"/>
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        입고/폐기 선택
+                                    </td>
+                                    <td>
+                                        <input type="radio" name="option" value="input"> 입고
+                                        <input type="radio" name="option" value="output"> 폐기
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        수량
+                                    </td>
+                                    <td>
+                                        <input type="text" />
+                                    </td>
+                                    <td>
+                                    </td>
+                                </tr>
+                            </table>
+                            <button style="margin-top: 5%;" onclick="alert('등록하시겠습니까?')">등록</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+    <script language="javascript">
+        function showPopup() { window.open("../html/01_ListPopup.html", "a", "width=400, height=300, left=100, top=50"); }
+        </script>
+</html>
