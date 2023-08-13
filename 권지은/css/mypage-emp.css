@@ -1,0 +1,287 @@
+.container {
+    justify-content: center;
+    max-width: 90%;
+    margin: auto;
+    border: 1px solid rgb(199, 199, 199);
+    min-width: 1500px;
+}
+
+.headerContainer {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.logo {
+    width: 25%;
+    text-align: center;
+}
+
+.hor {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: center;
+}
+
+.logo img {
+    width: 40%;
+}
+
+.nav {
+    background: #2A3C1E;
+    width: 100%;
+    /* padding: 20px 30px; */
+    /* box-sizing: border-box; */
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: space-between;
+}
+
+.menubar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 130px 30px 85px;
+}
+
+.menu {
+    cursor: pointer;
+    color: rgb(255, 255, 255);
+    font-size: 1.3em;
+}
+
+#logout {
+    color: white;
+    font-size: 1em;
+    cursor: pointer;
+}
+
+.logout {
+    text-align: right;
+    padding: 20px 30px 0 0;
+}
+
+.mainContainer {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.leftContainer {
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: first baseline;
+    align-content: center;
+}
+
+.rightContainer {
+    width: 100%;
+    height: 100%;
+}
+
+.content {
+    height: 860px;
+    background-color: #ecead8;
+}
+
+.horizon {
+    border: 1.5px solid #2A3C1E;
+    width: 80%;
+}
+
+.profile {
+    width: 200px;
+    height: 200px;
+    border: 8px solid #2A3C1E;
+    border-radius: 50%;
+    background-color: rgb(199, 199, 199);
+    margin-bottom: 30px;
+}
+
+.profile img {
+
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+
+}
+
+.leftContainer div {
+    text-align: center;
+}
+
+.paddingContainer {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column; /* 수직 정렬 */
+    justify-content: first baseline;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.name {
+    font-size: 1.8em;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.dept {
+    font-size: 1.4em;
+    margin-bottom: 30px;
+}
+
+.workHours {
+    width: 100%;
+    background-color: #2A3C1E;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+}
+
+.work, .date, .hour {
+    color: white;
+}
+
+.work {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.date {
+    font-size: 1.3em;
+    margin-bottom: 10px;
+}
+
+.hour {
+    font-size: 3em;
+}
+
+.workBtn {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.workBtn div {
+    background-color: rgb(204, 204, 204);
+    border-radius: 20px;
+    box-shadow: 0 2px 4px 0px rgb(187, 187, 187);
+    width: 40%;
+    margin-bottom: 30px;
+}
+
+.attendence, .leaveWork {
+    font-size: 1.2em;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.memo {
+    width: 100%;
+    height: 200px;
+    background-color: rgb(204, 204, 204);
+}
+
+/* content 영역 */
+
+
+.content{
+
+    display: flex;
+
+}
+.wrap{
+    
+        width: 90%;
+        height: 90%;
+        border-radius: 30px;
+        background-color: white;
+        box-shadow: 2px 2px 40px  #99a45c74 ;
+        margin: auto;
+        margin-bottom: 30px;
+        transition: all 0.5s;
+        transition-delay: 0.4s;
+        display: flex;
+}
+
+/* .content div:hover {
+        width: 91%;
+        height:91%;
+} */
+
+.empinfo-image{
+  position: relative;
+  /* width: 30%; */
+  padding: 35px;
+  background-color: #2A3C1E;
+  border-radius: 30px 0px 0px 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+.empinfo-image .empinfo-img{
+
+  height: 210px;
+  width: 210px;
+  /* margin: 50% 23%; */
+  object-fit: cover;
+  border-radius: 50%;
+  /* border: 5px solid #2A3C1E; */
+  position: relative;
+}
+
+
+.info-title{
+
+ font-size: 20px;
+ color: white;
+
+}
+
+
+.infoinput {
+
+  width:90%;
+  /* display: flex; */
+  /* flex-direction: column; */
+  padding: 40px;
+  /* margin-left: 50px; */
+
+}
+
+.sections {
+ display: flex;
+  justify-content: flex-start;
+}
+
+.section1, .section2 {
+
+  display: flex;
+  flex-direction: column;
+
+}
+
+.section1 div, .section2 div{
+
+  margin: 10px;
+  font-size: 25px;
+
+}
+
+.imgbutton {
+
+  width: 50px;
+  height: 50px;
+  border-radius: 50px;
+  position: absolute;
+  top: 300px;
+  left:200px
+
+}

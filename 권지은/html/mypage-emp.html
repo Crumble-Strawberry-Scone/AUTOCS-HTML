@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/권지은/css/mypage-emp.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="/main/img/logo-black.png" alt="">
+                <div class="hor">
+                    <div class="horizon"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logout">
+                    <div id="logout" onclick="location.href='#'">
+                        로그아웃
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menu" onclick="location.href='#'">마이페이지</div>
+                    <div class="menu" onclick="location.href='#'">근태관리</div>
+                    <div class="menu" onclick="location.href='#'">전자결재</div>
+                    <div class="menu" onclick="location.href='#'">일정</div>
+                    <div class="menu" onclick="location.href='#'">게시판</div>
+                    <div class="menu" onclick="location.href='#'">재고관리</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <div class="paddingContainer">
+                    <div class="profile">
+                        <img src="/main/img/emp.jpg" alt="" >
+                    </div>
+                    <div class="name">홍길동 사원님</div>
+                    <div class="dept">영업 1부</div>
+                    <div class="workHours">
+                        <div class="work">근태관리</div>
+                        <div class="date">2023-08-08</div>
+                        <div class="hour">8H 17M</div>
+                    </div>
+                    <div class="workBtn">
+                        <div class="attendence">출근하기</div>
+                        <div class="leaveWork">퇴근하기</div>
+                    </div>
+                    <div class="memo"></div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="content">
+                    <div class="wrap">
+                        <div class="empinfo-image">
+                                <div class="info-title">
+                                    <h1>사원 정보</h1>
+                                </div>
+                                <div>
+                                    <img src="/main/img/emp.jpg" alt="" class="empinfo-img"/>    
+                                    <button class="imgbutton" type="submit">바꾸기</button>
+                                </div>
+                                <br>
+                                <span style="color: white; text-align:center" >가로200 세로 200<br>이미지를 넣어주세요</span>
+                        </div>
+                        <div class="infoinput">
+                            <form id="" action="/mypage/changeInfo" method="post">
+                                <div class="sections">
+                                    <div class="section1">
+                                        <div class=" empInfo empId">
+                                            <label for="empId">사원ID</label>
+                                            <input type="text" id="empId" name="empId" maxlength="20" value="emp01" readonly style="border: none">
+                                        </div>
+                                        <div class=" empInfo empName kor">
+                                            <label for="empNameKor">이름(한글)</label>
+                                            <input type="text" id="empNameKor" name="empNameKor" maxlength="20" value="김사원" readonly style="border: none">
+                                        </div>
+                                        <div class=" empInfo empName Eng">
+                                            <label for="empNameEng">이름(영문)</label>
+                                            <input type="text" id="empNameEng" name="empNameEng" maxlength="20" value="KIM SA WON"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empEmail">
+                                            <label for="empEmail">이메일</label>
+                                            <input type="email" id="empEmail" name="empEmail" maxlength="20" value="kim@gmail.com"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDuty">
+                                            <label for="empDuty">직책</label>
+                                            <input type="text" id="empDuty" name="empDuty" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">부서명</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                    </div>
+                                    <div class="section2">
+                                        <div class="button">
+                                            <button type="button" onclick="">비밀번호 변경</button>
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">휴대 전화</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">내선 번호</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">생일</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">근무지</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                        <div class=" empInfo empDep">
+                                            <label for="empDep">고용 형태</label>
+                                            <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                        </div>
+                                    </div>
+                                </div>
+                                <fieldset id="adress">
+                                    <div class="empAddress">
+                                        <div class="postcode">
+                                            <label for="postcode">주소</label>
+                                                <div class="adressButton">
+                                                    <button type="button" onclick="sample6_execDaumPostcode()" value="우편번호 찾기">
+                                                        <span><i class="fa-solid fa-magnifying-glass"></i>주소검색</span>
+                                                    </button>
+                                                </div>
+                                                <div class="postCode input">
+                                                    <input type="text" name="zipcode" id="postcode" placeholder="우편번호" required />
+                                                </div>
+                                        </div>
+                                        <div class="baseAddress">
+                                            <div class="baseAddress input">
+                                                <input type="text" name="baseAddress" id="aseAddress" placeholder="주소" required />
+                                            </div>
+                                        </div>
+                                        <div class="ditailAddress">
+                                            <div class="ditailAddress input">
+                                                <input type="text" name="detailAddress" id="etailAddress" placeholder="상세주소" required />
+                                            </div>
+                                        </div>
+                                    </div>
+                                </fieldset>
+                                <div class=" empInfo empDep">
+                                    <label for="empDep">입사일</label>
+                                    <input type="text" id="empDep" name="empDep" maxlength="20" value="영업1팀"  style="border: none">
+                                </div>
+                                <!-- 버튼 -->
+                                <div class="button">
+                                    <div>
+                                        <button class="button" type="submit">
+                                            <b>회원정보 수정</b>
+                                        </button>
+                                    </div>
+                                </div>
+                        </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../js/main1.js"></script>
+</html>
