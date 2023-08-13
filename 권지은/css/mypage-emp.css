@@ -1,3 +1,8 @@
+body {
+	font-family: 'Noto Sans KR', sans-serif;
+}
+
+
 .container {
     justify-content: center;
     max-width: 90%;
@@ -272,7 +277,21 @@
 
   margin: 10px;
   font-size: 25px;
+  font-weight: 600;
+  color: #32362f;
 
+}
+
+.sections input {
+
+    width: 400px;
+    height: 50px;
+    padding-left: 20px;
+    font-size: 21px;
+    color: #7e7b7b;
+    font-weight: 700;
+    font-family: inherit
+   
 }
 
 .imgbutton {
