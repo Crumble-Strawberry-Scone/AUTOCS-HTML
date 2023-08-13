@@ -1,0 +1,41 @@
+.loginWrapper {
+    display: flex;
+    justify-content: center;
+    padding: 100px;
+}
+
+.loginForm {
+    border: 1px solid rgb(191, 191, 191);
+    width: 600px; height: 450px;
+    text-align: center;
+}
+
+.logo img {
+    width: 180px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.id, .pwd {
+    width: 350px;
+    height: 35px;
+    margin-bottom: 10px;
+    border: 1.5px solid #2a3c1e;
+    border-radius: 5px;
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+}
+
+.loginBtn {
+    background-color: #2a3c1e;
+    width: 356px;
+    height: 35px;
+    border: 1.5px solid #2a3c1e;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    line-height: 33px;
+}
