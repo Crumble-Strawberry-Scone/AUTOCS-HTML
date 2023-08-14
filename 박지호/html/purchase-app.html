@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/newMain.css">
+    <link rel="stylesheet" href="../css/purchase-app.css">
+</head>
+<body>
+    <header>
+        <div class="headerWrapper">
+            <div class="topNav">
+                <div class="gohome">
+                    <div class="logo">
+                        <img src="../img/logo-black1.png">
+                    </div>
+                    <div class="officName">
+                        AUTOCSS
+                    </div>
+                </div>
+                <div class="home">
+                    홈
+                </div>
+                <div class="dashboard">
+                    게시판
+                </div>
+                <div class="chart">
+                    조직도
+                </div>
+                <div class="approval">
+                    전자결재
+                </div>
+                <div class="calendar">
+                    캘린더
+                </div>
+                <div class="management">
+                    근태관리
+                </div>
+                <div class="todo">
+                    +Todo
+                </div>
+                <div class="stock">
+                    재고관리
+                </div>
+                <div class="profile">
+                    <div class="profileImg">
+
+                    </div>
+                    마이페이지
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="menubar">
+            <div class="newApp">새 결재 진행</div>
+            <div class="documentForm">
+                문서 양식
+            </div>
+            <div class="purchase">구매요청</div>
+            <div class="traffic">여비정산</div>
+            <div class="business">업무보고</div>
+            <div class="vacation">휴가신청</div>
+            <div class="pay">비용청구</div>
+            <div class="goApp">
+                결재하기
+            </div>
+            <!-- 지금 내가 승인해야함 -->
+            <div class="appWait">결재 대기 문서</div>
+            <div class="appSee">참조/열람 대기 문서</div>
+            <!-- 아직 나까지 승인이 올라오지 않음 -->
+            <div class="appSoon">결재 예정 문서</div>
+            <div class="myDocument">
+                개인 문서함
+            </div>
+            <!-- 내가 결재 요청한 업무 보고서 -->
+            <div class="myBusiness">업무 문서함</div>
+            <!-- 나한테 온 결재 -->
+            <div class="myApp">결재 문서함</div>
+            <!-- 나를 수신으로 한 문서 -->
+            <div class="mySee">참조/열람 문서함</div>
+            <!-- 수신한 모든 문서 -->
+            <div class="receive">수신 문서함</div>
+            <div class="send">발신 문서함</div>
+        </div>
+        <div class="content">
+            <div class="area1">구 매 요 청</div>
+            <br><br>
+            <div class="area2">
+                <div class="area3">
+                    <table class="table1">
+                        <tr>
+                            <td class="td2">작 성 자</td>
+                            <td class="td1">박지호</td>
+                        </tr>
+                        <tr>
+                            <td class="td2">소 속 부 서</td>
+                            <td class="td1">영업 1부</td>
+                        </tr>
+                        <tr>
+                            <td class="td2">작 성 날 짜</td>
+                            <td class="td1">2023-08-15</td>
+                        </tr>
+                        <tr>
+                            <td class="td2">문 서 번 호</td>
+                            <td class="td1"></td>
+                        </tr>
+                    </table>
+                </div>
+                <div style="display: flex; margin-right: 40px;">
+                    <!-- <div class="area4">
+                        <div class="area5">기안</div>
+                        <div class="area6">사원</div>
+                        <div class="area7">박지호</div>
+                        <div class="area8"></div>
+                    </div>
+                    <div class="area9">
+                        <div class="area5">승인</div>
+                        <div class="area6">팀장</div>
+                        <div class="area7">유승제</div>
+                        <div class="area8"></div>
+                    </div> -->
+                    <div class="approve">
+                        <span class="area4">요청</span>
+                        <span class="area5" style="margin-right: 20px;">
+                            <div class="area6">사원</div>
+                            <div class="area7">박지호</div>
+                            <div class="area8"></div>
+                        </span>
+                        <span class="area4">승인</span>
+                        <span class="area5">
+                            <div class="area6">팀장</div>
+                            <div class="area7">유승제</div>
+                            <div class="area8"></div>
+                        </span>
+                        <span class="area5">
+                            <div class="area6">이사</div>
+                            <div class="area7">김마야</div>
+                            <div class="area8"></div>
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <br><br>
+            <div class="docTitle">
+                <div class="area9">제목</div>
+                <input type="text" name="docTitle" id="docTitle">
+            </div>
+            <br><br>
+            <div class="addDelBtn">
+                <div class="add">추가</div>
+                <div class="delete">삭제</div>
+            </div>
+            <div class="area10">
+                <table class="table2">
+                    <tr>
+                        <td class="productName">품명</td>
+                        <td class="productSize">규격</td>
+                        <td class="amount">수량</td>
+                        <td class="price">단가</td>
+                        <td class="totalPrice">금액</td>
+                        <td class="note">비고</td>
+                    </tr>
+                    <tr>
+                        <td class="td3"><input type="text" name="productName"></td>
+                        <td class="td3"><input type="text" name="productSize"></td>
+                        <td class="td3"><input type="text" name="amount"></td>
+                        <td class="td3"><input type="text" name="price"></td>
+                        <td class="td3"></td>
+                        <td class="td3"><input type="text" name="note"></td>
+                    </tr>
+                </table>
+                <div class="area11">
+                    <div class="area12">합계</div>
+                    <div class="allPrice">1,000,000</div>
+                </div>
+            </div>
+            <br><br><br>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            Copyright 2023. AUTOCSS inc. all rights reserved.
+        </div>
+    </footer>
+</body>
+</html>
