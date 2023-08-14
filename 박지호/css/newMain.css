@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1000px;
+    min-width: 1250px;
 }
 
 .topNav {
@@ -65,13 +65,14 @@ body {
 .menubar {
     width: 250px;
     height: 590px;
-    background-color: gray;
+    background-color: #ecead8;
     /* height값 임의로 넣어둠 */
 }
 
 .foot {
     text-align: center;
-    background-color: #ecead8;
+    background-color: #2a3c1e;
+    color: white;
     height: 50px;
     line-height: 45px;
 }
