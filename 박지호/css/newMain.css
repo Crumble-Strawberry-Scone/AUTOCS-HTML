@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    min-width: 1250px;
+    min-width: 1500px;
 }
 
 .topNav {
@@ -36,6 +36,11 @@ body {
     font-size: 0.9em;
     margin-left: 200px;
     cursor: pointer;
+    /* 선택된 메뉴 색 */
+    background-color: #8d8a6e;
+    width: 80px;
+    text-align: center;
+    margin-right: -15px;
 }
 
 .dashboard, .chart, .approval, .calendar, .management, .todo, .stock {
@@ -43,6 +48,12 @@ body {
     font-size: 0.9em;
     margin-left: 50px;
     cursor: pointer;
+    width:80px;
+    text-align: center;
+}
+
+.home:hover, .dashboard:hover, .chart:hover, .approval:hover, .calendar:hover, .management:hover, .todo:hover, .stock:hover {
+    color: #ecead8;
 }
 
 .profile {
