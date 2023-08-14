@@ -1,0 +1,15 @@
+.approval {
+    background-color: #8d8a6d;
+}
+
+.newApp {
+    border: 1px solid #8d8a6d;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    line-height: 49px;
+    border-radius: 8px;
+    font-size: 1.3em;
+    font-weight: 500;
+    margin-left: 25px;
+}
