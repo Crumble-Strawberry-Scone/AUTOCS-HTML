@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/stock.css">
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="headerContainer">
+                <div class="logo">
+                    <img src="../img/logo-black.png" alt="">
+                    <div class="hor">
+                        <div class="horizon"></div>
+                    </div>
+                </div>
+                <div class="nav">
+                    <div class="logout">
+                        <div id="logout" onclick="location.href='#'">
+                            로그아웃
+                        </div>
+                    </div>
+                    <div class="menubar">
+                        <div class="menu" onclick="location.href='#'">마이페이지</div>
+                        <div class="menu" onclick="location.href='#'">근태관리</div>
+                        <div class="menu" onclick="location.href='#'">전자결재</div>
+                        <div class="menu" onclick="location.href='#'">일정</div>
+                        <div class="menu" onclick="location.href='#'">게시판</div>
+                        <div class="menu" onclick="location.href='#'">재고관리</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mainContainer">
+                <div class="leftContainer">
+                    <div class="paddingContainer">
+                        <div class="profile"></div>
+                        <div class="name">홍길동 사원님</div>
+                        <div class="dept">영업 1부</div>
+                        <div class="workHours">
+                            <div class="work">근태관리</div>
+                            <div class="date">2023-08-08</div>
+                            <div class="hour">8H 17M</div>
+                        </div>
+                        <div class="workBtn">
+                            <div class="attendence">출근하기</div>
+                            <div class="leaveWork">퇴근하기</div>
+                        </div>
+                        <div class="memo"></div>
+                    </div>
+                </div>
+                <div class="rightContainer">
+                    <div class="content">
+                        <div class="nav-bar">
+                            <h1 class="title">재고관리</h1>
+                            <div class="separator2"></div>
+                            <a href="../html/02_check-product.html" style="margin-top: 60px;">재고조회</a>
+                            <a href="../html/01_product-regist.html">등록</a>
+                            <a href="../html/03_product-io.html">입고/폐기</a>
+                            <a class="selected" href="../html/04_product-orderList.html">신청내역관리</a>
+                            <a href="../html/05_product-bill.html">세금계산서</a>
+                            <a href="../html/06_product-statistics.html">통계</a>
+                        </div>
+                        <div class="contentsbox">
+                            <div style="display: flex; justify-content: space-between;">
+                                <div>
+                                    <label>기간선택</label>
+                                    <input type="date">
+                                    <label>~</label>
+                                    <input type="date">
+                                </div>
+
+                                <div>
+                                    <label>영업점</label>
+                                    <input type="text" placeholder="영업점을 조회하세요">
+                                    <button>조회</button>
+                                </div>
+                                
+                                <div>
+                                    <label>상태</label>
+                                    <select>
+                                        <option value="wait">대기</option>
+                                        <option value="cancel">취소</option>
+                                        <option value="reject">반려</option>
+                                        <option value="permit">승인</option>
+                                        <option value="complete">완료</option>
+                                    </select>
+                                </div>
+
+                            </div>
+
+                            <div style="margin-top: 5%;">
+                                <table style="border: solid 1px;">
+                                    <tr style="white-space: pre-line;">
+                                        <th>거래번호</th>
+                                        <th>영업점</th>
+                                        <th>품목코드</th>
+                                        <th>품목명</th>
+                                        <th>규격</th>
+                                        <th>단위</th>
+                                        <th>단가</th>
+                                        <th>신청수량</th>
+                                        <th>비고</th>
+                                        <th>비고</th>
+                                    </tr>
+                                    <tr>
+                                        <td>1</td>
+                                        <td>식품</td>
+                                        <td>밀가루</td>
+                                        <td>10kg</td>
+                                        <td>EA</td>
+                                        <td>100</td>
+                                        <td style="background-color: lightgoldenrodyellow;">70</td>
+                                        <td>50</td>
+                                        <td>30</td>
+                                        <td>-</td>
+                                        <td>12,000</td>
+                                        <td>-</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2</td>
+                                        <td>식품</td>
+                                        <td>밀가루</td>
+                                        <td>10kg</td>
+                                        <td>EA</td>
+                                        <td>100</td>
+                                        <td style="background-color: lightgoldenrodyellow;">70</td>
+                                        <td>50</td>
+                                        <td>30</td>
+                                        <td>-</td>
+                                        <td>12,000</td>
+                                        <td>-</td>
+                                    </tr>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+
+</html>

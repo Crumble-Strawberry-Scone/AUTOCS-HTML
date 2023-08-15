@@ -198,7 +198,7 @@
 
 .separator2 {
     border-bottom: 3px solid #1C2C10;
-    width: 170px;
+    width: 165px;
     margin-top: -17px;
     margin-left: -20px;
     }
@@ -207,8 +207,8 @@
     width: 85%;
     height: 800px;
     background-color: white;
-    margin-left: 190px;
-    margin-top: -805px;
+    margin-left: 163px;
+    margin-top: -800px;
     text-align: center;
 }
 
@@ -216,5 +216,6 @@
     padding-top: -20px;
     font-size: 45px;
 }
+
 
 

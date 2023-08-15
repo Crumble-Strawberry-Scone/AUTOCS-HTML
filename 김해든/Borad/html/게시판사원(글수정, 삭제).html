@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판-공지사항</title>
+    <link rel="stylesheet" href="../css/게시판작성수정.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="headerContainer">
+            <div class="logo">
+                <img src="../img/검정로고.png" alt="">
+                <div class="hor">
+                    <div class="horizon"></div>
+                </div>
+            </div>
+            <div class="nav">
+                <div class="logout">
+                    <div id="logout" onclick="location.href='#'">
+                        로그아웃
+                    </div>
+                </div>
+                <div class="menubar">
+                    <div class="menu" onclick="location.href='#'">마이페이지</div>
+                    <div class="menu" onclick="location.href='#'">근태관리</div>
+                    <div class="menu" onclick="location.href='#'">전자결재</div>
+                    <div class="menu" onclick="location.href='#'">일정</div>
+                    <div class="menu" onclick="location.href='#'">게시판</div>
+                    <div class="menu" onclick="location.href='#'">재고관리</div>
+                </div>
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="leftContainer">
+                <div class="paddingContainer">
+                    <div class="profile"></div>
+                    <div class="name">홍길동 사원님</div>
+                    <div class="dept">영업 1부</div>
+                    <div class="workHours">
+                        <div class="work">근태관리</div>
+                        <div class="date">2023-08-08</div>
+                        <div class="hour">8H 17M</div>
+                    </div>
+                    <div class="workBtn">
+                        <div class="attendence">출근하기</div>
+                        <div class="leaveWork">퇴근하기</div>
+                    </div>
+                    <div class="memo"></div>
+                </div>
+            </div>
+            <div class="rightContainer">
+                <div class="content">
+                    <div class="borad">
+                    <h1>게시판</h1>
+                    <div class="separator2"></div>
+                    <a href="#" style="margin-top: 60px;">공지사항</a>
+                    <a href="#">업무규정 및 규칙</a>
+                    <a href="#">인사 소식</a>
+                    <a href="#">부서별 소식</a>
+                    <a href="#">업무 협업 요청</a>
+                    <a href="#">건의 및 의견</a>
+                    <a href="#">조직도</a>
+                    <a href="#">자유게시판</a>
+                    <a href="#" style="padding-top: 120px;">글 작성하기</a>
+
+                    <div class="boardForm">
+                        <form id="postForm" action="#" method="post">
+                            <h2 style="padding-bottom: 30px; text-align: center;">글 작성</h2>
+                            <div class="form-row">
+                                <div class="form-group" style="margin-left: 8px;">
+                                    <label for="author">작성자:</label>
+                                    <input type="text" id="author" name="author">
+                                </div>
+                                <div class="form-group">
+                                    <label for="anonymous">익명:</label>
+                                    <input type="checkbox" id="anonymous" name="anonymous">
+                                </div>
+                                <div class="form-group" style="margin-left: 30px;">
+                                    <select id="category" name="category" style="width: 230px;">
+                                        <option value="default" selected>카테고리를 선택하세요</option>
+                                        <option value="notice">공지사항</option>
+                                        <option value="rule">업무규정 및 규칙</option>
+                                        <option value="Hi">인사 소식</option>
+                                        <option value="depa">부서별 소식</option>
+                                        <option value="help">업무 협업 요청</option>
+                                        <option value="op">건의 및 의견</option>
+                                        <option value="free">자유게시판</option>
+                                    </select>
+                                </div>
+                                <div class="form-group" style="margin-left: -90px;">
+                                    <select id="department" name="department" style="width: 230px;">
+                                        <option value="default" selected>부서를 선택하세요</option>
+                                        <option value="Hii">인사부</option>
+                                        <option value="matket">영업부</option>
+                                        <option value="matketing">마케팅부</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <input type="text" id="title" name="title" placeholder="제목을 입력하세요">
+                            </div>
+                            <div class="form-group" style="margin-top: 20px;">
+                                <textarea id="content" name="content" rows="6" placeholder="내용을 입력하세요" style="width: 1250px; height: 430px;"></textarea>
+                            </div>
+                            <div class="text-center">
+                                <button type="submit">수정하기</button>
+                                <button type="submit">삭제하기</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                </div>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</body>
+
+</html>
