@@ -1,17 +1,16 @@
+.modal{
+    display: none;
+}
 .newApp {
     width: 200px;
     height: 50px;
 }
-
-.modal{
-    display: none;
-}
-
 .contentHeader{
     text-align: left;
     margin: 50px 0px 0px 70px;
     font-size: 30px;
     font-weight: bolder;
+    
 }
 
 .today{
@@ -26,7 +25,6 @@
     font-size: 18px;
     font-weight: bolder;
 }
-
 .statusContainer{
     margin-top: 20px;
     border: 1.5px solid rgb(187, 187, 187, 0.3);
@@ -34,6 +32,7 @@
     display: flex;
     margin-left: 20px
 }
+
 .statusBox{
     border: 1px solid black;
     flex: 1;
@@ -53,8 +52,7 @@
     padding-bottom: 5px;
     text-align: left;
     font-size: 18px;
-    font-weight: bolder;
-
+    border-bottom: 1.5px solid rgb(187, 187, 187, 0.3);
 }
 .infoHeader{
     display: flex;
@@ -64,44 +62,45 @@
 
 .statusInfoBox1{
     margin-left: 25px;
-    width: 220px;
+    width: 120px;
     height: 100%;
     text-align: center;
 }
 .statusInfoBox2{
-    width: 220px;
+    width: 300px;
     height: 100%;
     text-align: center;
 }
 .statusInfoBox3{
-    width: 220px;
+    width: 250px;
     height: 100%;
     text-align: center;
 }
 .statusInfoBox4{
-    width: 220px;
+    width: 250px;
     height: 100%;
     text-align: center;
 }
 .statusInfoBox5{
-    width: 220px;
+    width: 250px;
     height: 100%;
     text-align: center;
 }
 .statusInfoBox6{
-    width: 220px;
-    height: 100%;
-    text-align: center;
-}
-.statusInfoBox7{
-    width: 220px;
+    width: 250px;
     height: 100%;
     text-align: center;
 }
 
+
+
 .infoContent{
     display: flex;
     margin-top: 13px;
+}
+
+.statusTime{
+    text-align: center;
 }
 
 .type{
@@ -126,16 +125,9 @@
     border: 0px;
     margin-left: 2px;
     border-radius: 2px;
-    cursor: pointer;
     box-sizing: border-box;
     width: 50px;
     height: 28px;
 }
-
-.statusValue{
-    text-align: center;
-}
-
-
 
 

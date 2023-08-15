@@ -1,244 +1,13 @@
-.container {
-    justify-content: center;
-    max-width: 90%;
-    margin: auto;
-    border: 1px solid rgb(199, 199, 199);
-    min-width: 1500px;
-}
-
-.headerContainer {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-}
-
-.logo {
-    width: 25%;
-    text-align: center;
-}
-
-.hor {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-content: center;
-}
-
-.logo img {
-    width: 40%;
-}
-
-.nav {
-    background: #2A3C1E;
-    width: 100%;
-    /* padding: 20px 30px; */
-    /* box-sizing: border-box; */
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; /* 수직 정렬 */
-    justify-content: space-between;
-}
-
-.menubar {
-    display: flex;
-    justify-content: space-between;
-    padding: 0 130px 30px 85px;
-}
-
-.menu {
-    cursor: pointer;
-    color: rgb(255, 255, 255);
-    font-size: 1.3em;
-}
-
-#logout {
-    color: white;
-    font-size: 1em;
-    cursor: pointer;
-}
-
-.logout {
-    text-align: right;
-    padding: 20px 30px 0 0;
-}
-
-.mainContainer {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-}
-
-.leftContainer {
-    width: 25%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; /* 수직 정렬 */
-    justify-content: first baseline;
-    align-content: center;
-}
-
-.rightContainer {
-    width: 100%;
-    height: 100%;
-}
-
-.horizon {
-    border: 1.5px solid #2A3C1E;
-    width: 80%;
-}
-
-.profile {
-    width: 200px;
-    height: 200px;
-    border: 8px solid #2A3C1E;
-    border-radius: 50%;
-    background-color: rgb(199, 199, 199);
-    margin-bottom: 30px;
-}
-
-.leftContainer div {
-    text-align: center;
-}
-
-.paddingContainer {
-    width: 80%;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column; /* 수직 정렬 */
-    justify-content: first baseline;
-    align-items: center;
-    padding-top: 30px;
-}
-
-.name {
-    font-size: 1.8em;
-    font-weight: 600;
-    margin-bottom: 20px;
-}
-
-.dept {
-    font-size: 1.4em;
-    margin-bottom: 30px;
-}
-
-.workHours {
-    width: 100%;
-    background-color: #2A3C1E;
-    padding-top: 10px;
-    padding-bottom: 10px;
-    margin-bottom: 30px;
-}
-
-.work, .date, .hour {
-    color: white;
-}
-
-.work {
-    font-size: 1.2em;
-    margin-bottom: 10px;
-}
-
-.date {
-    font-size: 1.3em;
-    margin-bottom: 10px;
-}
-
-.hour {
-    font-size: 3em;
-}
-
-.workBtn {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-
-.workBtn div {
-    background-color: rgb(204, 204, 204);
-    border-radius: 20px;
-    box-shadow: 0 2px 4px 0px rgb(187, 187, 187);
-    width: 40%;
-    margin-bottom: 30px;
-}
-
-.attendence, .leaveWork {
-    font-size: 1.2em;
-    padding: 5px;
-    cursor: pointer;
-}
-
-.memo {
-    width: 100%;
-    height: 200px;
-    background-color: rgb(204, 204, 204);
-}
-
-.content {
-    display: flex;
-    height: 860px;
-    background-color: #ecead8;
-}
-
-/*네비게이션*/
-.nav-bar {
-    display: flex;
-    flex-direction: column;
-    text-align: left;
-    font-size: 20px;
-    margin-left: 50px;
-    color: #192C0B;
-    
-}
-.separator2 {
-    border-bottom: 3px solid #1C2C10;
-    }
-.title{
-    white-space: nowrap;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    font-size: auto;
-    overflow: hidden;
-}
-.nav-bar a {
-    margin: 20px 0;
-    text-align: left;
-    text-decoration: none;
-    color: #192C0B;
-    font-size: 18px;
-    
-}
-.nav-bar a:hover {
-    background-color: white; 
-}
-
-.selected{
-    background-color: white;
-}
-
-
-/* 컨텐츠 */
-.contentsbox {
-    padding: 2%;
-    width: 100%;
-    height: auto;
-    margin: 3%;
-    background-color: white;
-    text-align: center;
-}
-
-.context {
-    padding-top: -20px;
-    font-size: 45px;
-}
-
-
 .modal{
     display: none;
 }
-
+.newApp {
+    width: 200px;
+    height: 50px;
+}
 .contentHeader{
     text-align: left;
-    margin: 30px 0px 0px 30px;
+    margin: 50px 0px 0px 70px;
     font-size: 30px;
     font-weight: bolder;
 }
@@ -257,9 +26,10 @@
 }
 .statusContainer{
     margin-top: 20px;
-    border: 2px solid black;
+    border: 1.5px solid rgb(187, 187, 187, 0.3);
     height: 70px;
     display: flex;
+    margin-left: 20px
 }
 
 .statusBox{
@@ -278,6 +48,8 @@
 
 .weekStatus{
     display: flex;
+    justify-content: flex-start;
+    margin-top: 15px;
     padding-bottom: 5px;
     text-align: left;
     font-size: 18px;
@@ -286,9 +58,9 @@
 }
 .infoHeader{
     display: flex;
-    margin-top: 13px;
     border-bottom: 1.5px solid rgb(187, 187, 187, 0.3);
     padding-bottom: 5px;
+    text-align: center;
 }
 
 .statusInfoBox1{
@@ -297,27 +69,35 @@
     height: 100%;
 }
 .statusInfoBox2{
-    width: 145px;
+    width: 240px;
     height: 100%;
 }
 .statusInfoBox3{
-    width: 145px;
+    width: 240px;
     height: 100%;
 }
 .statusInfoBox4{
-    width: 200px;
+    width: 240px;
     height: 100%;
 }
 .statusInfoBox5{
-    width: 370px;
+    width: 500px;
     height: 100%;
 }
 
 .infoContent{
     display: flex;
     margin-top: 13px;
+    text-align: center;
 }
-
+.weeks{
+    margin-left: 60px;
+    margin-right: auto;
+    margin-bottom: 5px;
+}
+.statusTime{
+    text-align: center;
+}
 
 
 

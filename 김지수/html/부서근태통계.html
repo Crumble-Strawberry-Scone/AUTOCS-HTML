@@ -1,308 +1,248 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>main</title>
-    <link rel="stylesheet" href="../../김지수/css/본사근태통계.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/기본.css">
+    <link rel="stylesheet" href="../css/메인.css">
+    <link rel="stylesheet" href="../css/부서근태통계.css">
 </head>
-
 <body>
-    <div class="container">
-        <div class="headerContainer">
-            <div class="logo">
-                <img src="../img/검정로고.png" alt="">
-                <div class="hor">
-                    <div class="horizon"></div>
-                </div>
-            </div>
-            <div class="nav">
-                <div class="logout">
-                    <div id="logout" onclick="location.href='#'">
-                        로그아웃
+    <header>
+        <div class="headerWrapper">
+            <div class="topNav">
+                <div class="gohome">
+                    <div class="logo">
+                        <img src="../img/검정로고.png">
+                    </div>
+                    <div class="officName">
+                        AUTOCSS
                     </div>
                 </div>
-                <div class="menubar">
-                    <div class="menu" onclick="location.href='#'">마이페이지</div>
-                    <div class="menu" onclick="location.href='#'">근태관리</div>
-                    <div class="menu" onclick="location.href='#'">전자결재</div>
-                    <div class="menu" onclick="location.href='#'">일정</div>
-                    <div class="menu" onclick="location.href='#'">게시판</div>
-                    <div class="menu" onclick="location.href='#'">재고관리</div>
+                <div class="home">
+                    홈
+                </div>
+                <div class="dashboard">
+                    게시판
+                </div>
+                <div class="chart">
+                    조직도
+                </div>
+                <div class="approval">
+                    전자결재
+                </div>
+                <div class="calendar">
+                    캘린더
+                </div>
+                <div class="management">
+                    근태관리
+                </div>
+                <div class="todo">
+                    +Todo
+                </div>
+                <div class="stock">
+                    재고관리
+                </div>
+                <div class="profile">
+                    <div class="profileImg">
+
+                    </div>
+                    마이페이지
                 </div>
             </div>
         </div>
-        <div class="mainContainer">
-            <div class="leftContainer">
-                <div class="paddingContainer">
-                    <div class="profile"></div>
-                    <div class="name">홍길동 사원님</div>
-                    <div class="dept">영업 1부</div>
-                    <div class="workHours">
-                        <div class="work">근태관리</div>
-                        <div class="date">2023년 8월 8일</div>
-                        <div class="hour">8H 17M</div>
-                    </div>
-                    <div class="workBtn">
-                        <div class="attendence">출근하기</div>
-                        <div class="leaveWork">퇴근하기</div>
-                    </div>
-                    <div class="memo"></div>
-                </div>
+    </header>
+    <main>
+        <!-- 메뉴 바 -->
+        <div class="menubar">
+            <div class="newApp"></div>
+            <div class="documentForm">
+                근태 관리
             </div>
-            <div class="rightContainer">
+            <div class="workStatus">근태 현황</div>
+            <div class="department">부서 근태 통계</div>
+            <div class="headOffice">전사 근태 현황</div>
+        </div>
+        <div class="content">
+            <div class="contentsbox">
 
-                <div class="content">
-                    <div class="nav-bar">
-                        <h1 class="title">근태관리</h1>
-                        <div class="separator2"></div>
-                        <a class="selected" href="../html/02_check-product.html" style="margin-top: 60px;">근태현황</a>
-                        <a href="../html/01_product-regist.html">부서 근태통계</a>
-                        <a href="../html/03_product-io.html">전시 근태 현황</a>
+                <!-- 근태관리 -->
+                <div>
+                    <!-- 헤더 -->
+                    <div>
+                        <div class="contentHeader">
+                            부서 근태 통계
+                        </div>
+                        <div class="today">
+                            < 오늘 일자 > 
+                        </div>
                     </div>
-                    <div class="contentsbox">
 
-                        <!-- 근태관리 -->
-                        <div>
-                            <!-- 헤더 -->
-                            <div>
-                                <div class="contentHeader">
-                                    부서 근태 통계
-                                </div>
-                                <div class="today">
-                                    < 오늘 일자 > 
-                                </div>
+                    <div class ="download" style="display: flex;">
+                        <div style="cursor: pointer;">
+                            목록 다운로드
+                        </div>
+                        <div style="margin: 0px 30px; cursor: pointer;">
+                            인쇄
+                        </div>
+                    </div>
+
+                    <!-- 근무 시간 -->
+                    <div class="statusContainer">
+                        <div class="statusBox">
+                            <div class="statusContent">
+                               출근 미체크
                             </div>
-
-                            <div class ="download" style="display: flex;">
-                                <div>
-                                    목록 다운로드
-                                </div>
-                                <div style="margin: 0px 30px;">
-                                    인쇄
-                                </div>
+                            <div class="statusValue">
+                                50
                             </div>
-
-                            <!-- 근무 시간 -->
-                            <div class="statusContainer">
-                                <div class="statusBox">
-                                    <div class="statusContent">
-                                       출근 미체크
-                                    </div>
-                                    <div>
-                                        50
-                                    </div>
-                                </div>
-                                <div class="statusBox">
-                                    <div class="statusContent">
-                                        늦은 출근
-                                    </div>
-                                    <div>
-                                        3
-                                    </div>
-                                </div>
-                                <div class="statusBox">
-                                    <div class="statusContent">
-                                        결근
-                                    </div>
-                                    <div>
-                                        50
-                                    </div>
-                                </div>
-                                <div class="statusBox">
-                                    <div class="statusContent">
-                                        휴가
-                                    </div>
-                                    <div>
-                                        2
-                                    </div>
-                                </div>
-                                <div class="statusBox">
-                                    <div class="statusContent">
-                                        퇴근 미체크
-                                    </div>
-                                    <div>
-                                        53
-                                    </div>
-                                </div>
+                        </div>
+                        <div class="statusBox">
+                            <div class="statusContent">
+                                늦은 출근
                             </div>
+                            <div class="statusValue">
+                                3
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <div class="statusContent">
+                                결근
+                            </div>
+                            <div class="statusValue">
+                                50
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <div class="statusContent">
+                                휴가
+                            </div>
+                            <div class="statusValue">
+                                2
+                            </div>
+                        </div>
+                        <div class="statusBox">
+                            <div class="statusContent">
+                                퇴근 미체크
+                            </div>
+                            <div class="statusValue">
+                                53
+                            </div>
+                        </div>
+                    </div>
 
-                            <!-- 주 단위 근로 시간 -->
-                            <div>
+                    <!-- 주 단위 근로 시간 -->
+                    <div>
+                        
+                        <div class="weekStatus" style="margin-top: 30px;">
+                            <form style="display: flex; justify-content:flex-start">
+                                <div class="type"> 부서원 </div>
+                                <input type="text" class="inputText">
+                                <input type="submit" value="검색" class="inputButton">
+                            </form>
+                            <select name="10" style="margin-left: auto; width: 40px;">
+                                <option value="10">10</option>
+                                <option value="20">20</option>
+                                <option value="40">40</option>
+                                <option value="60">60</option>
+                            </select>
+                        </div>
+                        <div class="infoHeader"style="margin-top: 30px;">
+                            <div class="statusInfoBox1">
+                                부서원
+                            </div>
+                            <div class="statusInfoBox2">
+                                부서명
+                            </div>
+                            <div class="statusInfoBox3">
+                                날짜
+                            </div>
+                            <div class="statusInfoBox4">
+                                출근
+                            </div>
+                            <div class="statusInfoBox5">
+                                퇴근
+                            </div>
+                            <div class="statusInfoBox6">
+                                결근
+                            </div>
+                            <div class="statusInfoBox7">
+                                휴가
+                            </div>
+                        </div>
+                        <div class="infoContent">
+                            <div class="statusInfoBox1">
+                                김지수
+                            </div>
+                            <div class="statusInfoBox2">
+                                인사부
+                            </div>
+                            <div class="statusInfoBox3">
+                                2023-07-23
+                            </div>
+                            <div class="statusInfoBox4">
+                                08:31:23
+                            </div>
+                            <div class="statusInfoBox5">
+                                미등록
+                            </div>
+                        </div>
+                        <div class="infoContent">
+                            <div class="statusInfoBox1">
+                                김지수
+                            </div>
+                            <div class="statusInfoBox2">
+                                영업부1
+                            </div>
+                            <div class="statusInfoBox3">
+                                2023-07-23
+                            </div>
+                            <div class="statusInfoBox4">
+                                08:11:49
+                            </div>
+                            <div class="statusInfoBox5">
+                                미등록
+                            </div>
+                            <div class="statusInfoBox6">
                                 
-                                <div class="weekStatus" style="margin-top: 30px;">
-                                    <form style="display: flex;">
-                                        <div style="border: 1px solid black;"> 부서원 </div>
-                                        <input type="text" placeholder="부서원의 이름을 입력해주세요">
-                                        <input type="submit" value="검색">
-                                    </form>
-                                    <select name="10" style="text-align: right;">
-                                        <option value="10">10</option>
-                                        <option value="20">20</option>
-                                        <option value="40">40</option>
-                                        <option value="60">60</option>
-                                    </select>
-                                </div>
-                                <div class="infoHeader"style="margin-top: 30px;">
-                                    <div class="statusInfoBox1">
-                                        부서원
-                                    </div>
-                                    <div class="statusInfoBox2">
-                                        부서명
-                                    </div>
-                                    <div class="statusInfoBox3">
-                                        날짜
-                                    </div>
-                                    <div class="statusInfoBox4">
-                                        출근
-                                    </div>
-                                    <div class="statusInfoBox5">
-                                        퇴근
-                                    </div>
-                                    <div class="statusInfoBox6">
-                                        결근
-                                    </div>
-                                    <div class="statusInfoBox7">
-                                        휴가
-                                    </div>
-                                </div>
-                                <div class="infoContent">
-                                    <div class="statusInfoBox1">
-                                        김지수
-                                    </div>
-                                    <div class="statusInfoBox2">
-                                        인사부
-                                    </div>
-                                    <div class="statusInfoBox3">
-                                        2023-07-23
-                                    </div>
-                                    <div class="statusInfoBox4">
-                                        08:31:23
-                                    </div>
-                                    <div class="statusInfoBox5">
-                                        미등록
-                                    </div>
-                                </div>
-                                <div class="infoContent">
-                                    <div class="statusInfoBox1">
-                                        김지수
-                                    </div>
-                                    <div class="statusInfoBox2">
-                                        영업부1
-                                    </div>
-                                    <div class="statusInfoBox3">
-                                        2023-07-23
-                                    </div>
-                                    <div class="statusInfoBox4">
-                                        08:11:49
-                                    </div>
-                                    <div class="statusInfoBox5">
-                                        미등록
-                                    </div>
-                                    <div class="statusInfoBox6">
-                                        
-                                    </div>
-                                    <div class="statusInfoBox7">
-                                        Y
-                                    </div>
-                                </div>
-                                <div class="infoContent">
-                                    <div class="statusInfoBox1">
-                                        김지수
-                                    </div>
-                                    <div class="statusInfoBox2">
-                                        영업부2
-                                    </div>
-                                    <div class="statusInfoBox3">
-                                        2023-07-23
-                                    </div>
-                                    <div class="statusInfoBox4">
-                                        07:53:21
-                                    </div>
-                                    <div class="statusInfoBox5">
-                                        미등록
-                                    </div>
-                                    <div class="statusInfoBox6">
-                                        Y
-                                    </div>
-                                    <div class="statusInfoBox7">
-                                        
-                                    </div>
-                                </div>
+                            </div>
+                            <div class="statusInfoBox7">
+                                Y
+                            </div>
+                        </div>
+                        <div class="infoContent">
+                            <div class="statusInfoBox1">
+                                김지수
+                            </div>
+                            <div class="statusInfoBox2">
+                                영업부2
+                            </div>
+                            <div class="statusInfoBox3">
+                                2023-07-23
+                            </div>
+                            <div class="statusInfoBox4">
+                                07:53:21
+                            </div>
+                            <div class="statusInfoBox5">
+                                미등록
+                            </div>
+                            <div class="statusInfoBox6">
+                                Y
+                            </div>
+                            <div class="statusInfoBox7">
+                                
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-
-
-    <!-- 모달창 -->
-    <div class = "mod">
-        <!-- 모달 헤더 -->
-        <div class="modalHeader">
-            <!-- 일정 상세 -->
-            <div class="modalDetailed">
-
-            </div>
-            <div class="modalXButton">
-                x
-            </div>
+    </main>
+    <footer>
+        <div class="foot">
+            Copyright 2023. AUTOCSS inc. all rights reserved.
         </div>
-        <!-- 일정 이름 -->
-        <div class="scheduleName">
-            
-        </div>
-        <!-- 일정 기간 선택 -->
-        <div class="scheduleDate">
-            <!-- 시작 일자 선택 -->
-            <div class="startDate">
-
-            </div>
-            <!-- 시작 시간 선택 -->
-            <div class="startTime">
-
-            </div>
-            <!-- 종료 일자 선택 -->
-            <div class="endDate">
-
-            </div>
-            <!-- 종료 시작 선택 -->
-            <div class="endTime">
-
-            </div>
-
-        </div>
-        
-        <!-- 참석자 선택 -->
-        <div class="attendee">
-            <div>
-
-            </div>
-        </div>
-        <!-- 외부 참석자 선택 -->
-        <div class="outsideAttendee">
-
-        </div>
-        <!-- 장소 -->
-        <div class="place">
-
-        </div>
-
-        <!-- 내용 -->
-        <div class="modalContent">
-            
-        </div>
-
-        <!-- 댓글 -->
-        <div class="comments">
-
-        </div>
-    </div>
-
-
+    </footer>
 </body>
-
 </html>

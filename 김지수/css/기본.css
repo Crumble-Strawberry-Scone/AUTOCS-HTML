@@ -1,0 +1,256 @@
+.area1 {
+    text-align: center;
+    font-size: 1.4em;
+    font-weight: 500;
+    margin-top: 30px;
+}
+
+main {
+    display: flex;
+}
+
+.management{
+    background-color: #8d8a6d;
+}
+
+.documentForm {
+    margin-top: 30px;
+    margin-left: 40px;
+    font-weight: 600;
+}
+
+.goApp, .myDocument {
+    margin-left: 40px;
+    font-weight: 600;
+    margin-top: 23px;
+}
+
+.workStatus {
+    margin-top: 10px;
+}
+
+.workStatus, .department, .headOffice{
+    padding-left: 60px;
+    margin-bottom: 7px;
+    cursor: pointer;
+}
+
+.content {
+    width: 83.7%;
+    border-left: 1px solid rgb(203, 203, 203);
+}
+
+.TopTitle {
+    height: 70px;
+    font-size: 1.35em;
+    font-weight: 500;
+    line-height: 70px;
+    padding-left: 40px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+}
+
+.willApp {
+    height: 120px;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    line-height: 120px;
+    text-align: center;
+    color: rgb(203, 203, 203);
+    font-size: 15px;
+}
+
+.waiting, .done {
+    padding-left: 40px;
+    font-size: 1.15em;
+    margin-top: 30px;
+}
+
+.waitingDoc, .doneDoc {
+    margin-top: 20px;
+}
+
+/* .DocInfo {
+    width: 100%;
+    border-bottom: 1px solid rgb(203, 203, 203);
+    border-top: 1px solid rgb(203, 203, 203);
+    padding-left: 20px
+} */
+
+.area2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.table1 {
+    width: 300px;
+    height: 120px;
+    border: 1px solid rgb(87, 87, 87);
+    border-collapse: collapse;
+    margin-left: 40px;
+}
+
+td {
+    border: 1px solid rgb(150, 150, 150);
+    text-align: center;
+}
+
+.td1 {
+    width: 200px;
+}
+
+.td2 {
+    background-color: #ecead8;
+}
+
+.approve {
+    display: flex;
+}
+
+.area4 {
+    height: 120px;
+    width: 25px;
+    border: 1px solid rgb(150, 150, 150);
+    line-height: 60px;
+    text-align: center;
+    background-color: #ecead8;
+}
+
+.area6, .area7, .area8 {
+    width: 100px;
+    border-right: 1px solid rgb(150, 150, 150);
+    border-top: 1px solid rgb(150, 150, 150);
+    text-align: center;
+}
+
+.area8 {
+    height: 19px;
+    border-bottom: 1px solid rgb(150, 150, 150);
+}
+
+.area6 {
+    height: 19.4px;
+}
+
+.area7 {
+    height: 80px;
+    line-height: 80px;
+}
+
+.docTitle {
+    width: 94.4%;
+    margin: 0 40px;
+    display: flex;
+}
+
+.area9 {
+    padding: 1px;
+    border: 0.8px solid rgb(150, 150, 150);
+    border-right: none;
+    width: 93.6px;
+    text-align: center;
+    height: 36px;
+    line-height: 36px;
+    background-color: #ecead8;
+}
+
+#docTitle {
+    width: 100%;
+    font-size: 1.2em;
+    padding: 0 10px;
+    border: 0.8px solid rgb(150, 150, 150);
+    outline: none;
+}
+
+.addDelBtn {
+    display: flex;
+    justify-content: right;
+    margin-right: 40px;
+    margin-bottom: 3px;
+}
+
+.add, .delete {
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #8d8a6d;
+    color: white;
+    line-height: 30px;
+}
+
+.add {
+    margin-right: 10px;
+}
+
+.add:hover, .delete:hover {
+    box-shadow: 0 2px 4px 0 rgb(150, 150, 150);
+}
+
+.table2 {
+    border: 1px solid rgb(87, 87, 87);
+    border-collapse: collapse;
+    margin : 0 40px;
+    width: 94.4%;
+    line-height: 20px;
+}
+
+.productName {
+    width: 250px;
+}
+
+.productSize, .amount {
+    width: 100px;
+}
+
+.totalPrice {
+    width: 100px;
+}
+
+.note {
+    width: 450px;
+}
+
+.td3 {
+    padding: 2px 5px;
+    line-height: 40px;
+}
+
+.td3 input {
+    width: 95%;
+    font-size: 1.2em;
+    outline: none;
+    border: 0.5px solid rgb(220, 220, 220);
+    text-align: center;
+}
+
+.area11 {
+    margin: 0 40px;
+    border: 0.8px solid rgb(150, 150, 150);
+    border-top: none;
+    width: 94.27%;
+    display: flex;
+    justify-content: space-between;
+    height: 40px;
+}
+
+.area12 {
+    border-right: 1px solid rgb(150, 150, 150);
+    width: 252px;
+    text-align: center;
+    line-height: 40px;
+}
+
+.allPrice {
+    line-height: 40px;
+    margin-right: 20px;
+    font-size: 1.3em;
+}
+
+.cumulativeTime{
+    font-weight: bolder;
+    font-size: 18px;
+    margin-bottom: 4px;
+}
+.hoursDuty{
+    color: gray;
+}
