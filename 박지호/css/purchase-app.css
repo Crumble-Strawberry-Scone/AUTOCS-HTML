@@ -2,7 +2,10 @@
     text-align: center;
     font-size: 1.4em;
     font-weight: 500;
-    margin-top: 30px;
+    border-top: 1px solid rgb(203, 203, 203);
+    margin-top: 15px;
+    padding-top: 20px;
+    width: 100%px;
 }
 
 main {
@@ -51,11 +54,6 @@ main {
     padding-left: 60px;
     margin-bottom: 7px;
     cursor: pointer;
-}
-
-.content {
-    width: 83.7%;
-    border-left: 1px solid rgb(203, 203, 203);
 }
 
 .TopTitle {
@@ -156,6 +154,7 @@ td {
 
 .approve {
     display: flex;
+    margin-right: 40px;
 }
 
 .area4 {
@@ -189,7 +188,7 @@ td {
 }
 
 .docTitle {
-    width: 94.4%;
+    width: 100%;
     margin: 0 40px;
     display: flex;
 }
@@ -211,6 +210,10 @@ td {
     padding: 0 10px;
     border: 0.8px solid rgb(150, 150, 150);
     outline: none;
+}
+
+.docTitle {
+    width: 95%;
 }
 
 .addDelBtn {
@@ -243,7 +246,7 @@ td {
     border: 1px solid rgb(87, 87, 87);
     border-collapse: collapse;
     margin : 0 40px;
-    width: 94.4%;
+    width: 95%;
     line-height: 20px;
 }
 
@@ -280,10 +283,14 @@ td {
     margin: 0 40px;
     border: 0.8px solid rgb(150, 150, 150);
     border-top: none;
-    width: 94.27%;
+    width: 94.9%;
     display: flex;
     justify-content: space-between;
     height: 40px;
+}
+
+.area10 {
+    width: 100%;
 }
 
 .area12 {
@@ -297,4 +304,47 @@ td {
     line-height: 40px;
     margin-right: 20px;
     font-size: 1.3em;
+}
+
+.modify {
+    margin-left: 30px;
+    margin-top: 20px;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    color: white;
+    background-color: #8d8a6d;
+    border-radius: 5px;
+}
+
+.file {
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+.fileBtn {
+    display: none;
+}
+
+label {
+    cursor: pointer;
+    background-color: #ecead8;
+    margin: 30px 0;
+    width: 120px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+label:hover {
+    box-shadow: 0 2px 4px 0 rgb(202, 202, 202);
+}
+
+.file {
+    border: 3px dashed rgb(202, 202, 202);
+    margin: 0 40px;
+    height: 100px;
+    display: flex;
+    line-height: 40px;
+    justify-content: center;
 }
